@@ -1,7 +1,0 @@
-let phrases = [
-  "I bet you never guess",
-  "Try to guess the phrase",
-  "I wonder if you guess",
-  "Just for pro to guess",
-  "Guess the hidden phrase"
-];
