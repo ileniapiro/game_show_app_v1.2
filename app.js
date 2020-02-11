@@ -10,11 +10,16 @@ let hit_nr = 0;
 
 // PHRASES: Add here the phrases you want to play with.
 let phrases = [
-  "I bet you never guess",
-  "Try to guess the phrase",
-  "I wonder if you guess",
-  "Just for pro to guess",
-  "Guess the hidden phrase"
+  "Ad astra per aspera",
+  "Si vis pacem para bellum",
+  "Carpe diem",
+  "Alea iacta est",
+  "Dulce periculum",
+  "Acta non verba",
+  "Mors tua vita mea",
+  "Audentes fortuna iuvat",
+  "Aquila non capit muscas",
+  "Barba tenus sapientes"
 ];
 
 // START GAME: This function will start the game and reset the buttons
@@ -37,13 +42,13 @@ startGame.addEventListener("click", () => {
 });
 
 // RANDOM PHRASE ARRAY: It will choose a random phrase and create a string array of letters
-const getRandomPhraseAsArray = arr => {
+const getRandomPhraseAsArray = (arr) => {
   const randomNumber = Math.floor(Math.random() * arr.length);
   return arr[randomNumber].split("");
 };
 
 // DISPLAY PHRASE: Show the letter box of the choosen phrase on the screen
-const addPhraseToDisplay = arr => {
+const addPhraseToDisplay = (arr) => {
   for(i = 0; i < arr.length ; i += 1) {
     const li = document.createElement("li");
     li.textContent = arr[i];
@@ -57,7 +62,7 @@ const addPhraseToDisplay = arr => {
 };
 
 // CHECK LETTERS: match the right letters when clicked
-const checkLetter = button => {
+const checkLetter = (button) => {
     let guess = document.getElementsByClassName("letter");
     let matchFound = null;
     for (i = 0; i < guess.length; i +=1) {
@@ -78,6 +83,7 @@ const outcome = (result) => {
     message.textContent = "You WIN!!";
   } else if ( result === "lose") {
     overlay.classList.add("lose");
+    message.textContent = "You LOSE!!";
     startGame.textContent = "You have run out of hearts! Play again";
   }
 };

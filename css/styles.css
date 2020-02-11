@@ -4,11 +4,11 @@
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
+  --color-win: #68e8bb;
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
-  --color-neutral-light: #D2D2D2;
+  --color-neutral-light: #d2f7ea;
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
   --font-size-large: 60px;
@@ -94,7 +94,12 @@ button {
 
 .show {
   color: #000;
-  background-color: #76CE82;
+  background-color: #68e8bb;
+  transition: 1s;
+}
+
+.show:hover {
+ transform: translate(20px, 20px);
 }
 
 /* Keyboard */
