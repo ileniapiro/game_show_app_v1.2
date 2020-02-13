@@ -94,8 +94,7 @@ button {
 
 .show {
   color: #000;
-  background-color: #68e8bb;
-  transition: 1s;
+  transition: background-color #68e8bb 1s ease-in;
 }
 
 .show:hover {
