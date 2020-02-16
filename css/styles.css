@@ -93,6 +93,7 @@ button {
 }
 
 .show {
+  color: #445069;
   transition: background-color 1s ease-in;
   background-color: #68e8bb;
 }
