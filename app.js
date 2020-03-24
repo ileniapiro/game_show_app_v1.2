@@ -10,16 +10,16 @@ let hit_nr = 0;
 
 // PHRASES: Add here the phrases you want to play with.
 let phrases = [
-  "Ad astra per aspera",
-  "Si vis pacem para bellum",
-  "Carpe diem",
-  "Alea iacta est",
-  "Dulce periculum",
-  "Acta non verba",
-  "Mors tua vita mea",
-  "Audentes fortuna iuvat",
-  "Aquila non capit muscas",
-  "Barba tenus sapientes"
+  "Petrificus Totalus",
+  "Sectumsempra",
+  "Alohomora",
+  "Avada Kedavra",
+  "Accio",
+  "Confundo",
+  "Expecto Patronum",
+  "Expelliarmus",
+  "Wingardium Leviosa",
+  "Nox"
 ];
 
 // START GAME: This function will start the game and reset the buttons
@@ -83,7 +83,7 @@ const outcome = (result) => {
     message.textContent = "You WIN!!";
   } else if ( result === "lose") {
     overlay.classList.add("lose");
-    message.textContent = "You LOSE!!";
+    message.textContent = "You LOST!!";
     startGame.textContent = "You have run out of hearts! Play again";
   }
 };

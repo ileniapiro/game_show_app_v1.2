@@ -75,6 +75,11 @@ button {
   color: var(--color-start);
 }
 
+.header2 {
+  font-size: 20px;
+  color: var(--color-start);
+}
+
 /* Phrase */
 
 .letter {
