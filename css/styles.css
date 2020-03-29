@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
 
 /* Variables */
-
 :root {
   --color-win: #68e8bb;
   --color-lose: #D94545;
@@ -12,12 +11,12 @@
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
   --font-size-large: 60px;
+  --font-size-ss: 30px;
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
 }
 
 /* main */
-
 * {
   box-sizing: border-box;
 }
@@ -70,7 +69,6 @@ button {
 }
 
 /* Title */
-
 .header {
   color: var(--color-start);
 }
@@ -81,7 +79,6 @@ button {
 }
 
 /* Phrase */
-
 .letter {
   font-size: var(--font-size-medium);
   height: 65px;
@@ -91,6 +88,7 @@ button {
   color: transparent;
   background: var(--color-neutral-light);
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .space {
@@ -104,11 +102,10 @@ button {
 }
 
 .show:hover {
- transform: translate(20px, 20px);
+  transform: translate(20px, 20px);
 }
 
 /* Keyboard */
-
 .keyrow {
   display: flex;
   justify-content: center;
@@ -130,7 +127,6 @@ button {
 }
 
 /* Overlay */
-
 #overlay {
   display: flex;
   flex-direction: column;
@@ -170,4 +166,47 @@ button {
 
 .lose a {
   color: var(--color-lose);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    display: contents;
+    flex-direction: unset;
+  }
+
+  .keyrow {
+    display: contents;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .first_btn {
+    margin-left: 3px;
+  }
+
+  .last_btn {
+    margin-left: 3px;
+  }
+
+  .header {
+    font-size: var(--font-size-ss);
+    margin-top: 20px;
+  }
+
+  .header2 {
+    font-size: 15px;
+  }
+
+  .letter {
+    height: 45px;
+    width: 45px;
+  }
+
+  li, ol, ul {
+   margin-bottom: 0;
+  }
 }
